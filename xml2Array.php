@@ -86,7 +86,7 @@ class xmlToArray {
                 $xml->getName() => $propertiesArray
             );
         } catch (\Exception $e) {
-            echo $e->getMessage();
+            throw $e;
         }
     }
 
